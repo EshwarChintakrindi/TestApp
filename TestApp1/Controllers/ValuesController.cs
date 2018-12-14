@@ -17,6 +17,13 @@ namespace TestApp1.Controllers
             return new string[] { "value1", "value2" };
         }
 
+        // GET api/values
+        [HttpGet]
+        public ActionResult<IEnumerable<string>> Get1()
+        {
+            return new string[] { "value1", "value2" };
+        }
+
         // GET api/values/5
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
